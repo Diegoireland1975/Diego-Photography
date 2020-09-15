@@ -101,7 +101,7 @@ h2 {
 
 #images img:hover,
 #images img:active {
-  filter: brightness(70%);
+  filter: brightness(75%);
 }
 
 #header {
