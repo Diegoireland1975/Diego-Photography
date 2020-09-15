@@ -5,3 +5,5 @@ $('[data-fancybox="gallery"]').fancybox({
   transitionDuration: 1000,
   buttons: ["zoom", "slideShow", "fullScreen", "thumbs", "close"],
 });
+
+// ####lazy loading images####
