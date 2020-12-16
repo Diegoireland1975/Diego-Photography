@@ -15,6 +15,7 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   background: #eee;
   height: auto;
+  overflow-x: hidden;
 }
 
 a {
@@ -85,7 +86,7 @@ h2 {
 @keyframes text {
   0% {
     opacity: 0;
-    transform: translateX(-200%);
+    transform: translateX(-400%);
   }
 
   100% {
@@ -114,7 +115,7 @@ h2 {
 
 #images img {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   border-top: 2px solid #000;
   transition: brightness, 0.5s ease-in-out;
 }
@@ -122,6 +123,19 @@ h2 {
 #images img:hover,
 #images img:active {
   filter: brightness(75%);
+}
+
+.box {
+  transform: translateX(400%);
+  transition: transform 2.5s ease-in;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-400%);
+}
+
+.box.show {
+  transform: translateX(0);
 }
 
 #header {
