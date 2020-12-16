@@ -125,16 +125,18 @@ h2 {
   filter: brightness(75%);
 }
 
-.box {
+.box,
+.caption {
   transform: translateX(400%);
-  transition: transform 2.5s ease-in;
+  transition: transform 2s ease-in;
 }
 
 .box:nth-of-type(even) {
   transform: translateX(-400%);
 }
 
-.box.show {
+.box.show,
+.caption.show {
   transform: translateX(0);
 }
 
