@@ -125,8 +125,7 @@ h2 {
   filter: brightness(75%);
 }
 
-.box,
-.caption {
+.box {
   transform: translateX(400%);
   transition: transform 2s ease-in;
 }
@@ -135,8 +134,7 @@ h2 {
   transform: translateX(-400%);
 }
 
-.box.show,
-.caption.show {
+.box.show {
   transform: translateX(0);
 }
 
