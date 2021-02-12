@@ -31,8 +31,9 @@ img {
 /* ######### */
 
 main {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 main {
@@ -55,6 +56,9 @@ h2 {
 
 #landing {
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #landing-text {
@@ -72,10 +76,10 @@ h2 {
 }
 
 #landing-img {
-  background: url(../img/landing-1.jpg) no-repeat -350px top/cover;
-  /* background: url(../img/diego1.jpg) no-repeat top center/cover; */
+  background: url(../img/landing-1.jpg) no-repeat center top/cover;
   height: 100vh;
   width: 100%;
+  margin: 0 auto;
 }
 
 /* animation text */
@@ -125,7 +129,7 @@ h2 {
   filter: brightness(75%);
 }
 
-.box {
+/* .box {
   transform: translateX(400%);
   transition: transform 2s ease-in;
 }
@@ -136,7 +140,7 @@ h2 {
 
 .box.show {
   transform: translateX(0);
-}
+} */
 
 #header {
   text-align: center;
@@ -201,6 +205,12 @@ footer h3 {
 .up {
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+  transition: 0.4s margin-top ease-in-out;
+}
+
+.up:hover,
+.up:focus {
+  margin-top: 1.5rem;
 }
 
 /* media queries */
@@ -213,11 +223,13 @@ footer h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   #landing-img {
+    background: url(../img/landing-1.jpg) no-repeat -150px top/cover;
     height: 100vh;
-    width: 60vh;
+    width: 90vh;
   }
 
   #landing-text h2 {
