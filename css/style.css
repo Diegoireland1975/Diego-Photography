@@ -59,6 +59,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
 }
 
 #landing-text {
@@ -76,9 +77,9 @@ h2 {
 }
 
 #landing-img {
-  /* background: url(../img/landing-1.jpg) no-repeat -270px center / cover; */
-  height: 100vh;
-  width: 90%;
+  background: url(../img/landing-1.jpg) no-repeat -150px top/cover;
+  height: 80vh;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -224,10 +225,12 @@ footer h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    /* max-height: 60vh; */
+    width: 100%;
   }
 
   #landing-img {
-    /* background: url(../img/landing-1.jpg) no-repeat -150px top/cover; */
+    background: url(../img/landing-1.jpg) no-repeat -150px top/cover;
     height: 100vh;
     width: 100vh;
   }
