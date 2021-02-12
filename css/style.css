@@ -77,10 +77,11 @@ h2 {
 }
 
 #landing-img {
-  background: url(../img/landing-1.jpg) no-repeat -250px top/cover;
-  height: 80vh;
-  width: 100%;
-  object-fit: cover;
+  background: url(../img/landing-1.jpg) no-repeat -230px top/cover;
+  background-color: #87cefa;
+  background-blend-mode: multiply;
+  height: 100vh;
+  width: 100vh;
 }
 
 /* animation text */
@@ -225,14 +226,13 @@ footer h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* max-height: 60vh; */
     width: 100%;
   }
 
   #landing-img {
     background: url(../img/landing-1.jpg) no-repeat -150px top/cover;
-    height: 100vh;
-    width: 100vh;
+    background-color: #87cefa;
+    background-blend-mode: multiply;
   }
 
   #landing-text h2 {
