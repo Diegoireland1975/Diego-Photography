@@ -251,3 +251,18 @@ footer h3 {
     padding: 1rem;
   }
 }
+
+@media (min-width: 1024px) {
+  #images img {
+    max-width: 900px;
+  }
+}
+/* for Bigger Screen */
+@media (min-width: 1440px) {
+  main {
+    max-width: 1700px;
+  }
+  #images img {
+    max-width: 1400px;
+  }
+}
